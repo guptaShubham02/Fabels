@@ -6,17 +6,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Fable - Children Kindergarten WordPress Theme Preview - ThemeForest</title>
     <link rel="icon" href="images/logo.png">
@@ -32,7 +41,6 @@
             </div>
 
             <nav>
-                <h5>suvm</h5>
                 <ul>
                     <li><a href="#" class="home-active"><i class="fas fa-home"></i> Home
                         </a>
@@ -335,7 +343,7 @@
     </header>
 
 
-    <div class="flash-wrapper">
+    <div class="flash-wrapper" id="toP">
         <div class="flash-written">
             <div class="friendly" data-aos="fade-down" data-aos-duration="900" data-aos-delay="1000">Friendly
                 Atmoshphere</div>
@@ -356,11 +364,11 @@
         <div class="flash-bg">
             <div class="boy1" data-aos="fade-left" data-aos-duration="1200"></div>
             <div class="girl1" data-aos="fade" data-aos-duration="2000" data-aos-delay="400"></div>
-            <div class="abc-bg"></div>
-            <div class="paint-bg"></div>
-            <div class="ribbon-bg"></div>
-            <div class="jar-bg"></div>
-            <div class="train-bg"></div>
+            <div class="abc-bg" data-aos="fade-up" data-aos-duration="2300" data-aos-delay="2800"></div>
+            <div class="paint-bg" data-aos="fade-up" data-aos-duration="2300" data-aos-delay="2800"></div>
+            <div class="ribbon-bg" data-aos="fade-up" data-aos-duration="2300" data-aos-delay="2800"></div>
+            <div class="jar-bg" data-aos="fade-up" data-aos-duration="2300" data-aos-delay="2800"></div>
+            <div class="train-bg" data-aos="fade-up" data-aos-duration="2300" data-aos-delay="2800"></div>
         </div>
     </div>
 
@@ -457,7 +465,7 @@
                             </div>
                         </div>
 
-                        <div class="template-1 template-3 mt-5">
+                        <div class="template-3 mt-5">
                             <div class="row mt-4">
                                 <div class="col-3 mx-3 screen-alt"></div>
                                 <div class="col-9 mb-3">
@@ -487,7 +495,7 @@
 
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
                         data-ride="carousel">
                         <!--Slides-->
@@ -513,13 +521,14 @@
                             <span class="sr-only">Next</span>
                         </a>
                         <!--/.Controls-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-thumb" data-slide-to="0" class="active slider-1"> <img
-                                    class="d-block w-100" src="images/slider1.jpg" class="img-fluid"></li>
-                            <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block slider-1 w-100"
-                                    src="images/slider2.jpg" class="img-fluid"></li>
-                            <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100"
-                                    src="images/slider3.jpg" class="img-fluid"></li>
+                        <ol class="carousel-indicators carousel-indicators-1">
+                            <li data-target="#carousel-thumb" data-slide-to="0" class="active slider-1"
+                                style="border: 0px !important;"> <img class="d-block w-100" src="images/slider1.jpg"
+                                    class="img-fluid"></li>
+                            <li data-target="#carousel-thumb" data-slide-to="1" style="border: 0px !important;"><img
+                                    class="d-block slider-1 w-100" src="images/slider2.jpg" class="img-fluid"></li>
+                            <li data-target="#carousel-thumb" data-slide-to="2" style="border: 0px !important;"><img
+                                    class="d-block w-100" src="images/slider3.jpg" class="img-fluid"></li>
                         </ol>
                     </div>
                 </div>
@@ -527,43 +536,54 @@
         </div>
     </div>
 
+    <!-- Owl carousal -->
     <div class="teaching">
-        <div class="container">
-            <div class="row py-5 teaching-written">
-                <div class="col-md-6 col-lg-3 pt-md-4 text-center text-white">
-                    <div class="py-md-3 etos teaching-round">235</div>
-                    <div class="py-md-3">
-                        <h4 class="mb-3">Teaching Hours</h4>
-                        <p class="mb-md-5">Elipsis morbi nulla a metro interdum vitae elite.</p>
+        <div class="container px-4 owl-carousel owl-theme owl-loaded">
+            <div class=" py-5 teaching-written owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">235</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Teaching Hours</h4>
+                            <p class="mb-md-5">Elipsis morbi nulla a metro interdum vitae elite.</p>
+                        </div>
+                    </div>
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">100%</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Satisfied Parents</h4>
+                            <p class="mb-md-5">Elementum pulvinar detos <br> diaspis movum blandit.</p>
+                        </div>
+                    </div>
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">1050</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Mals Per Year</h4>
+                            <p class="mb-md-5">Pulvinar forte maestro node terminal est elipsis prism.</p>
+                        </div>
+                    </div>
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">$15</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Teaching Hours</h4>
+                            <p class="mb-md-5">Elipsis morbi nulla a metro interdum vitae elite.</p>
+                        </div>
+                    </div>
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">$25</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Mals</h4>
+                            <p class="mb-md-5">Elipsis morbi nulla a metro interdum vitae elite.</p>
+                        </div>
+                    </div>
+                    <div class="pt-md-4 text-center text-white owl-item">
+                        <div class="py-md-3 etos teaching-round">507</div>
+                        <div class="py-md-3">
+                            <h4 class="mb-3">Our Pupils</h4>
+                            <p class="mb-md-5">Pulvinar forte maestro node terminal est elipsis prism.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 pt-md-4 text-center text-white">
-                    <div class="py-md-3 etos teaching-round">100%</div>
-                    <div class="py-md-3">
-                        <h4 class="mb-3">Satisfied Parents</h4>
-                        <p class="mb-md-5">Elementum pulvinar detos <br> diaspis movum blandit.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 pt-md-4 text-center text-white">
-                    <div class="py-md-3 etos teaching-round">1050</div>
-                    <div class="py-md-3">
-                        <h4 class="mb-3">Mals Per Year</h4>
-                        <p class="mb-md-5">Pulvinar forte maestro node terminal est elipsis prism.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 pt-md-4 text-center text-white">
-                    <div class="py-md-3 etos teaching-round">15</div>
-                    <div class="py-md-3">
-                        <h4 class="mb-3">Teaching Hours</h4>
-                        <p class="mb-md-5">Elipsis morbi nulla a metro interdum vitae elite.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="teaching-box-wrapper d-none d-md-block">
-                <div class="teaching-box teaching-box-active"></div>
-                <div class="teaching-box"></div>
-                <div class="teaching-box"></div>
-                <div class="teaching-box"></div>
             </div>
         </div>
     </div>
@@ -1021,9 +1041,8 @@
             </div>
 
             <div class="pb-5">
-                <ol class="carousel-indicators pb-2">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                        class="active carousel-indicators-active"></li>
+                <ol class="carousel-indicators pb-2 carousel-indicators-2">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
@@ -1251,7 +1270,8 @@
                             <span class="top-footer-span"></span>
                         </h5>
                         <div>
-                            <p class="mb-4 fs-6">Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi vehicula morbi.</p>
+                            <p class="mb-4 fs-6">Elipsis magna a nulla elite forte maecenas est elementum magna etos
+                                interdum movum morbi vehicula morbi.</p>
                             <img class="footer-img" src="images/logo_footer.png" alt="">
                         </div>
                     </div>
@@ -1272,14 +1292,15 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-3 mb-5">
                         <h5 class="text-white fs-5 mb-3">
                             FEATURES
                             <span class="top-footer-span"></span>
                         </h5>
                         <div>
-                            <p class="fs-6">Nunc gravida rutrum mauris vehin hasellus ac pretium augue vivamul lacus ligul mattis ac vene:</p>
+                            <p class="fs-6">Nunc gravida rutrum mauris vehin hasellus ac pretium augue vivamul lacus
+                                ligul mattis ac vene:</p>
                             <ul class="top-footer-ul-2">
                                 <li class="mb-1">Friendly and welcoming place</li>
                                 <li class="mb-1">Science and art classes</li>
@@ -1290,7 +1311,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-3 mb-5">
                         <h5 class="text-white fs-5 mb-4">
                             RECENT POSTS
@@ -1307,7 +1328,7 @@
                                         <p class="top-footer-p">October 03, 2021</p>
                                     </div>
                                 </li>
-                                
+
                                 <li class="row mb-3">
                                     <div class="col-4">
                                         <a href="#"><img src="images/12.jpg" width="100%"></a>
@@ -1317,7 +1338,7 @@
                                         <p class="top-footer-p">October 03, 2021</p>
                                     </div>
                                 </li>
-                                
+
                                 <li class="row">
                                     <div class="col-4">
                                         <a href="#"><img src="images/13.jpg" width="100%"></a>
@@ -1342,21 +1363,38 @@
                     <a class="bottom-footer-icon2" href="#"></a>
                     <a class="bottom-footer-icon3" href="#"></a>
                     <a class="bottom-footer-icon4" href="#"></a>
-                    <a class="bottom-footer-icon5" href="#"></a></div>
+                    <a class="bottom-footer-icon5" href="#"></a>
+                </div>
             </div>
             <div class="mb-4 text-muted text-center fs-6 bottom-footer-details">
-                <span>&copy;</span> 
-                <a href="#">Fabel- Children Kindergarten Templete</a> 
-                <span>by </span> 
+                <span>&copy;</span>
+                <a href="#">Fabel- Children Kindergarten Templete</a>
+                <span>by </span>
                 <a href="#">QuanticaLabs</a>
             </div>
         </div>
     </footer>
 
+    <!-- Backto top -->
+    <div>
+        <a href="#toP" class="fas fa-arrow-alt-circle-up backToTop"></a>
+    </div>
 
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Owl carousal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $(document).ready(function () {
@@ -1365,9 +1403,12 @@
                 if ($(window).scrollTop() <= 550) {
                     $("#logo-img").css({ "height": "120px", "margin-top": "0px" });
                     $("header").css({ "position": "static" });
+                    $('.backToTop').css({"opacity": "0", "bottom": "-30px"})
                 } else {
                     $("#logo-img").css({ "height": "66px", "margin-top": "60px" });
                     $("header").css({ "position": "sticky" });
+                    $('.backToTop').css({"opacity": "1", "bottom": "30px"})
+
                 }
             });
 
@@ -1385,37 +1426,60 @@
                 $(this).siblings().children().removeClass('overview-span');
             });
 
-            $('.overview-button').click(function () {
-                $('.template-1').toggleClass('template-3').toogleClass('template-2');
-
+            $('.overview-a').click(function () {
+                $('.template-1').addClass('template-2').removeClass('template-3');
+                $('.template-1').siblings().addClass('template-3').removeClass('template-2');
             })
+
+            $('.mission-a').click(function () {
+                $('.template-1').addClass('template-3').removeClass('template-2');
+                $('.template-1').siblings().addClass('template-2').removeClass('template-3');
+            });
 
             $('.carousel').carousel({
                 interval: 200
-            })
-
-            $('.teaching-box').click(function () {
-                $('.teaching-box').removeClass('teaching-box-active');
-                $(this).addClass('teaching-box-active');
             });
 
-            // second crousal slider
-            // $('.active').addClass('carousel-indicators-active');
-            // $('.active').siblings().removeClass('carousel-indicators-active');
+            //Owl Carousal
+            $('.owl-carousel').owlCarousel({
+                margin: 10,
+                mousedrag: true,
+                responsiveClass: true,
+                autoplay: true,
+                dots: true,
+                dotsEach: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false
+                    }
+                },
+                loop: true,
+                autoplayHoverPause: true,
+                slideTransition: 'linear',
+            })
         });
 
     </script>
     <!-- Js AOS code -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
